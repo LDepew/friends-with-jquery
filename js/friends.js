@@ -15,7 +15,7 @@ $().ready(() => {
 
 const display = () => {
     let tbody = $("tbody");
-    tbody.clear()
+    tbody.empty()
     for(let friend of friends) {
         let tr = $("<tr></tr>")
         let tdName = $(`<td>${friend.name}</td>`);
