@@ -9,12 +9,14 @@ $().ready(() => {
             name: fname, email: femail, phone: fphone
         };
         friends.push(friend);
+        display();
     });
 });
 
-// const readyFN = () => {
-//     console.group("jQuery is ready!");
-// }
-
-// $().ready(readyFN);
-
+const display = () => {
+    let tbody = $("tbody");
+    tbody.clear()
+    for(let friend of friends) {
+        let tr = $("<tr></tr>")
+    }
+}
