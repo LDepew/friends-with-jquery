@@ -18,5 +18,12 @@ const display = () => {
     tbody.clear()
     for(let friend of friends) {
         let tr = $("<tr></tr>")
+        let tdName = $(`<td>${friend.name}</td>`);
+        tr.append(tdName);
+        let tdEmail = $(`<td>${friend.email}</td>`);
+        tr.append(tdEmail);
+        let tdPhone = $(`<td>${friend.phone}</td>`);
+        tr.append(tdPhone);
+        tbody.append(tr);
     }
 }
